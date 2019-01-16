@@ -1,75 +1,79 @@
-* {box-sizing:border-box}
-
 body{
-
-    /* background-color: rgb(48, 47, 47); */
-    /* background-color: rgb(100, 98, 98); */
-    background-color: black;
-    
+    font-family:  sans-serif; 
+    background: #1A1110
 }
 
-
-.jumbotron,
 .navbar
 {
-
-    /* background-color: rgb(100, 98, 98); */
-    background-color: rgb(48, 47, 47)
+    background-color: #1A1110;
     }
 
-    #bio,
-    #pricing,
-    #slideShow
-    {
-color: rgb(240, 181, 71);
-  border-style: groove;
-  border-width: 10px;
-  border-color: rgb(48, 47, 47);
-  box-shadow: 5px 10px 18px  orange;
+
+    header {
+            position: relative;
+            margin: 10px auto;
+            width: 100%;
+            height: 50vh;
+            background: black;
     }
 
-#split-image {
-    position: relative;
-    height: 70vh;
-    width: 90%;
-    margin-bottom: 20px;
-}
-
-#split1 {
-    position: absolute;
-    left: -100%;
-    height: 100%;
-    width: 80%;
-    overflow-x: hidden;
-}
-
-#split1 img {
-    position: absolute;
-    right: -50%;
-}
+    header img {
+        margin: 20px;
+    /* padding: 0; */
+    line-height: 60vh;
+    }
 
 
-#split2 {
-    position: absolute;
-    right: -100%;
-    height: 100%;
-    width: 80%;
-    overflow-x: hidden;
-}
-   
-#split2 img {
-    position: absolute;
-    left: -50%;
-    z-index: 2;
+    .masthead{
+        position: relative;
+        margin: 20px auto;
+        width: 100%;
+        height: 55vh;
+        background: black;
+    }
+
+    .bio{
+        position: relative;
+        margin: 20px auto;
+        width: 100%;
+        height: 30vh;
+        background: black;
+    }
+
+
+
+
+    .musicSecetion{
+        position: relative;
+        margin: 20px auto;
+        width: 100%;
+        /* height: 30vh; */
+        background: black;
+    }
+
+
+    #mainPic{
+    
+    width: 100%;
+    padding: 0;
+    border: 3px ridge grey;
+    border-radius: 10px; 
+          /*     left ----------------------------------  right -------------------------------  bottom ------------------------------*/
+    box-shadow: -15px 5px 13px -8px rgb(151, 183, 252), 15px 5px 5px -8px rgb(151, 183, 252), 5px 5px 15px 5px rgb(151, 183, 252); 
+    z-index: 5; 
+    }
+
+
+section h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+   line-height: 50vh;
+   font-size: 3.75em;
 }
 
-#split-background {
-    display: none;
-    position: absolute;
-    height: 100%;
-    width: 80%;
-    left: 17%;
-    box-shadow: 5px 10px 18px orange;
-    border: 5px solid grey;
-    z-index: 5;
+section:nth-child(even) h1 {
+    
+    color: black;
 }
